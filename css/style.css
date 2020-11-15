@@ -1,0 +1,274 @@
+/* 
+==========================
+           GLOBAL
+========================== 
+*/
+
+body {
+    font-family: tahoma, arial, sans-serif;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #627397;
+}
+
+/* 
+==========================
+           HEADER
+========================== 
+*/
+
+header {
+    background-position: 25% 25%;
+    background-image: url("../img/topo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #003d52;
+    color: rgb(206, 206, 206);
+    height: 600px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    /* background: #12121d; */
+    align-items: center;
+    padding: 10px 30px;
+    height: 56px;
+}
+
+header nav .menu {
+    display: none;
+}
+
+/* 
+==========================
+        NEW FASHION
+========================== 
+*/
+
+.new-fashion {
+    padding: 0px 30px;
+}
+
+.new-fashion .title {
+    text-align: center;
+    margin: 30px 0px;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 25px;
+}
+
+.new-fashion .content {
+    margin-bottom: 40px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.new-fashion .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-fashion .cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 0px;
+    width: 100%;
+    align-items: center;
+}
+
+.new-fashion .cards .card img {
+    width: 100%;
+    height: auto;
+}
+
+.new-fashion .cards .card .text-card-title {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 10px 0px;
+}
+
+.new-fashion .cards .card .text-card-content {
+    color: gray;
+}
+
+/* 
+==========================
+    TEXT EVERYTHING
+========================== 
+*/
+
+.text-everything {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../img/bg_detalhe.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 30px;
+    margin-top: 80px;
+    color: #ffffff;
+}
+
+.text-everything h2 {
+    font-size: 2em;
+    line-height: 55px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.text-everything p {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 25px;
+    width: 100%;
+}
+
+/* 
+==========================
+        CONTACT
+========================== 
+*/
+
+.contact {
+    color: #0d0d31e8;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    /* padding: 5px 0px 10px; */
+    line-height: 25px;
+    padding: 30px;
+    margin: 20px 0px;
+}
+/* 
+==========================
+           MAPS
+========================== 
+*/
+
+.maps-google {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 12px;
+    padding: 30px;
+}
+
+/* 
+==========================
+         FOOTER
+========================== 
+*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    background: #010c24;
+    background-size: auto;
+    color: #627397;
+    padding: 35px;
+    height: 10px;
+}
+
+/* 
+==========================
+    MEDIA QUERY
+========================== 
+*/
+
+/* small */
+
+@media (min-width:575.98px) {
+    .new-fashion .cards .card {
+        margin: 10px;
+        width: 45%;
+    }
+}
+
+@media (min-width: 991.98px) {
+    header nav .sanduwich {
+        display: none;
+    }
+    header nav .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        
+    }
+    header nav .menu li {
+        padding: 10px;
+        margin: 10px;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+    header nav .logo {
+        /* padding: 100px; */
+    }
+    .new-fashion .cards .card {
+        margin: 10px;
+        width: 30%;
+    }
+}
+
+@media (min-width: 1199.98px) {
+    header nav .menu {
+        width: 25%;
+    }
+    
+.new-fashion {
+    padding: 0px 10%;
+}
+
+.new-fashion .title {
+    margin: 50px 0px;
+    font-size: 2em;
+
+}
+.new-fashion .cards .card {
+    margin: 15px;
+    width: 30%;
+    align-items: center;
+}
+.text-everything {
+  padding: 5% 10%;
+
+   
+}
+.text-everything h2 {
+    font-size: 3em;
+    line-height: 55px;
+    text-align:left;
+    margin-bottom: 45px;
+    
+}
+
+.text-everything p {
+    text-align: left;
+    font-size: 1em;
+    line-height: 25px;
+    width: 35%;
+}
+.contact {
+    color: #0d0d31e8;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    padding: 25px;
+  
+}
+.maps-google {
+    padding: 0px;
+}
+}
